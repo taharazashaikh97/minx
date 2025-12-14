@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Minx AI</title>
-<link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="app">
-<header class="header">Minx AI</header>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1 class="header-title">AI Assistant</h1>
+            <button class="new-chat-btn">New Chat</button>
+        </header>
 
+        <div class="chat-window" id="chatWindow">
+            <div class="message bot-message initial-message">
+                <div class="avatar">🤖</div>
+                <div class="text-content">Hello! How can I help you today?</div>
+            </div>
+        </div>
 
-<div id="chat" class="chat"></div>
+        <div class="chat-input-area">
+            <textarea id="userInput" placeholder="Ask me anything..." rows="1"></textarea>
+            <button id="sendBtn" class="send-btn">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 14L21 3M3 11L20.89 3.06L14.73 20.89L10 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
 
-
-<div class="input-area">
-<input id="userInput" type="text" placeholder="Ask anything..." autocomplete="off" />
-<button id="sendBtn">➤</button>
-</div>
-</div>
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
